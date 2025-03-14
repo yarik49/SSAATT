@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SSAATT subject blog</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>SSAATT subject blog</h1>
+  </header>
+
+
+  <nav>
+    <ul>
+      <li><a href="#" id="nav-home">Home</a></li>
+      <li><a href="#" id="nav-register">Sign Up</a></li>
+      <li><a href="#" id="nav-blog">Blog</a></li>
+      <li><a href="#" id="nav-new-entry">New Entry</a></li>
+      <li><a href="#" id="nav-about">About...</a></li>
+    </ul>
+  </nav>
+
+  
+  <main>
+
+    <!-- 1) Secțiunea Home (Login) -->
+    <section id="home-section">
+      <h2>Home (Login)</h2>
+      <form id="home-form">
+        <label for="username">User:</label>
+        <input 
+          type="text" 
+          id="username" 
+          name="username" 
+          required 
+          minlength="4" 
+          maxlength="16"
+        >
+        
+        <label for="password">Password:</label>
+        <input 
+          type="password" 
+          id="password" 
+          name="password" 
+          required 
+          minlength="4" 
+          maxlength="16"
+        >
+        <input type="submit" value="Log In">
+      </form>
+
+      <aside id="aside-home">
+        <p>Introduce your credentials (e.g., user = "user", password = "12345").</p>
+        <p class="error-message" id="home-error"></p>
+      </aside>
+    </section>
+
+    <!-- 2) Secțiunea Register (Sign Up) -->
+    <section id="register-section">
+      <h2>Register (Sign Up)</h2>
+      <form id="register-form">
+        <!-- Nick -->
+        <label for="nick">Nickname:</label>
+        <input type="text" id="nick" name="nick" minlength="4" maxlength="16" required>
+
+        <!-- Email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Nume -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="32" required>
+
+        <!-- Surname (opțional) -->
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" name="surname" maxlength="32">
+
+        <!-- Password -->
+        <label for="reg-password">Password:</label>
+        <input type="password" id="reg-password" name="password" minlength="4" maxlength="16" required>
+
+        <!-- Confirm password -->
+        <label for="password-check">Confirm password:</label>
+        <input type="password" id="password-check" name="password-check" minlength="4" maxlength="16" required>
+
+        <input type="submit" value="Sign Up">
+      </form>
+
+      <aside id="aside-register">
+        <p>This section allows you to create a new user account.</p>
+        <p class="error-message" id="register-error"></p>
+      </aside>
+    </section>
+
+    <!-- 3) Secțiunea Blog Entries -->
+    <section id="blog-section">
+      <h2>My Blog Entries</h2>
+      <!-- Buton de încărcare a postărilor -->
+      <button id="load-posts-btn">Load my posts</button>
+      <!-- Listă pentru afișare postări -->
+      <ul id="blog-list"></ul>
+
+      <aside id="aside-blog">
+        <p>Here you can see all your blog posts if you are logged in.</p>
+        <p class="error-message" id="blog-error"></p>
+      </aside>
+    </section>
+
+    <!-- 4) Secțiunea New Blog Post -->
+    <section id="newpost-section">
+      <h2>Create a New Blog Entry</h2>
+      <form id="newpost-form">
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+        <label for="comment">Comment:</label>
+        <textarea 
+          id="comment" name="comment" rows="4" required>
+        </textarea>
+
+        <input type="submit" value="Publish">
+      </form>
+
+      <aside id="aside-newpost">
+        <p>Fill in the fields to create a new blog post.</p>
+        <p class="error-message" id="newpost-error"></p>
+      </aside>
+    </section>
+
+    <!-- 5) Secțiunea About -->
+    <section id="about-section">
+      <h2>About...</h2>
+      <img src="uja-logo.png" alt="UJA logo" style="max-width:300px;">
+      <p>
+        This project was developed by Chernov Yaroslav for the SSAATT subject, academic year 2024/2025.  
+        Go to <a href="https://platea.ujaen.es" target="_blank">PLATEA</a>.
+      </p>
+      <aside id="aside-about">
+        <p>This section is always accessible, regardless of authentication.</p>
+      </aside>
+    </section>
+
+  </main>
+
+  <!-- Subsolul paginii -->
+  <footer>
+    <p>Author: CHERNOV Yaroslav</p>
+    <p>Subject: Servicios y Aplicaciones de Telematica</p>
+    <p>Degree: Ingineering of Telecomunication</p>
+    <p>Academic Year: 2024/2025</p>
+  </footer>
+
+</body>
+</html>

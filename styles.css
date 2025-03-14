@@ -1,0 +1,114 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    max-width: 100%; 
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    background-color: #0a579c;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  /* Titlu principal */
+  header h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Meniul de navigare */
+  nav ul {
+    list-style: none;
+    text-align: center;
+    background-color: #f0f8ff;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #0a579c;
+    font-weight: bold;
+  }
+  
+  
+  section {
+    border: 1px solid #0d0d0d;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  
+  aside {
+    background-color: #f8f8f8;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0a579c;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem;
+  }
+  
+  /* Formulare - label și input */
+  form label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    color: #0a579c;
+  }
+  
+  form input[type="text"],form input[type="password"],form input[type="email"],form textarea,form input[type="date"] {
+    width: 50%;
+    margin-top: 0.3rem;
+    padding: 0.4rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Butoane */
+  form input[type="submit"],button {
+    background-color: #0a579c;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    display: block;
+  }
+  
+  /* Hover pe buton */
+  form input[type="submit"]:hover,
+  button:hover {
+    background-color: #084674;
+  }
+  
+  /* Clase pentru erori */
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 0.5rem;
+  }
+  
